@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  background-image: url(/Users/kavya/Desktop/tech-moms/Portfolio/pinkgradient.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  /* background-color: rgb(250, 202, 243); */
+  margin: 0;
+  height: 5vmax;
+}
+
+div {
+  display: block;
+}
+
+
+/*Social Icons*/
+.icon-circles {
+  margin: 1vw;
+  background-color: #ffffff;
+  opacity: 0.6;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.icon-circles:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.social-icon-block {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.icons {
+  width: 1.8em;
+}
+
+/*End of social icons*/
+.logo {
+  width:200px;
+  height:50px;
+}
+
+/*Navigation bar*/
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  clear: both;
+  height: 40px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  text-shadow: #000000;
+}
+
+.nav-item {
+  width: 100%;
+  position: sticky;
+  text-align: center;
+}
+
+.nav-name {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'open sauce';
+  /* font-weight: bold; */
+}
+
+.nav-name:hover {
+  font-size: 1.5em;
+  transition: 1s;
+}
+
+/*End of navigation bar*/
+
+.blank-space {
+  content: " ";
+  display: table;
+  padding: 4em;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  font-family: 'open sauce';
+  /* background-color: rgb(250, 202, 243); */
+}
+/* Marquee styling
+.marquee-text {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.para {
+  color: rgb(244, 239, 239);
+  font-weight: bold;
+  white-space: nowrap;
+  clear: both;
+  float: left;
+}
+*/
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .main-nav {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+
+  .icons {
+    width: 2vw;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .main-nav {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .icons {
+    width: 2vw;
+  }
+
+}
+
+.footer{
+  display:flex;
+  flex-direction: row;
+  font-size:20px;
+  background-color:rgb(250, 202, 243);
+  padding: 20px 20px 20px 20px;
+}
+
+/* Contact Form */
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.maincontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.connect {
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(248, 247, 220);
+  font-size: 50px;
+  justify-content: center;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #fbe0f8;
+  padding: 30px;
+  font-family: 'Fjalla One', serif;
+  margin: 10px 10px 10px 10px;
+  width: 500px;
+}
+
+.contact-form---field {
+  height: 1em;
+  padding: 20px 20px;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  color: #f8cb74;
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
+  /* width: 100%; */
+  border-style: solid;
+  border-color: #a6a6a6;
+  box-shadow: rgba(107, 107, 107, 0.35) 0px 5px 15px;
+}
+
+.contact-form---field-textarea {
+  height: 1em;
+  padding: 20px 20px;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  color: #f8cb74;
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
+  /* width: 100%; */
+  border-style: solid;
+  border-color: #a6a6a6;
+  box-shadow: rgba(107, 107, 107, 0.35) 0px 5px 15px;
+}
+
+.button {
+  color: #030303;
+  background-image: linear-gradient(to bottom, rgb(250, 241, 249), rgb(236, 166, 243));
+  border: 100vmax;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 2px 2px 2px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: rgba(107, 107, 107, 0.35) 0px 5px 15px;
+}
+
+.button:hover {
+  /* -webkit-transform: scale(1.1); */
+  /* -ms-transform: scale(1.1); */
+
+  transition: scale(1.1);
+}
+
+/* End of Contact Form */

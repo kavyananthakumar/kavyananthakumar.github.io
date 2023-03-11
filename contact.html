@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!--Social site icons-->
+      <section style="display: flex; flex-direction: row">
+        <div style="width: 600px">
+          <ul class="social-icon-block">
+            <li class="icon-circles">
+              <a
+                aria-label="Monorovia Facebook"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <img
+                  class="icons"
+                  src="/Users/kavya/Desktop/tech-moms/Portfolio/1217141_fb_icon.png"
+                />
+              </a>
+            </li>
+            <li class="icon-circles">
+              <a
+                aria-label="Monorovia Linkedin"
+                href="https://www.linkedin.com/in/kavya-nanthakumar/"
+                target="_blank"
+              >
+                <img
+                  class="icons"
+                  src="/Users/kavya/Desktop/tech-moms/Portfolio/1217173_linkedin_icon.png"
+                />
+              </a>
+            </li>
+            <li class="icon-circles">
+              <a
+                aria-label="Monorovia Instagram"
+                href="https://www.instagram.com"
+                target="_blank"
+              >
+                <img
+                  class="icons"
+                  src="/Users/kavya/Desktop/tech-moms/Portfolio/1217174_instagram_icon.png"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Logo/Heading-->
+        <div style="text-align: center">Kavya's Portfolio</div>
+      </section>
+    </header>
+    <!--Navigation Buttons-->
+    <div id="main-nav" class="main-nav">
+      <div class="nav-item"><a href="index.html" class="nav-name">HOME</a></div>
+      <div class="nav-item">
+        <a href="#Aboutme" class="nav-name">ABOUT ME</a>
+      </div>
+      <div class="nav-item">
+        <a href="#education" class="nav-name">EDUCATION</a>
+      </div>
+      <div class="nav-item">
+        <a href="contact.html" class="nav-name">CONTACT</a>
+      </div>
+    </div>
+    <!--Form-->
+    <div><h1 class="connect">Let's Connect</h1></div>
+    <div class="maincontent">
+      <div class="contact-container">
+        <form
+          action="mailto:kavyakumar87@yahoo.com"
+          method="post"
+          enctype="text/plain"
+          id="contactform"
+          name="contactform"
+          class="form"
+        >
+          <input
+            type="text"
+            id="name"
+            class="contact-form---field"
+            placeholder="Enter your Name..."
+            maxlength="256"
+            required
+          />
+          <!-- <input type="email" id="contactemail" class="contact-form---field" placeholder="Enter your Email..." maxlength="256"> -->
+          <textarea
+            maxlength="500"
+            id="field"
+            name="field"
+            placeholder="Tell me your ideas"
+            data-name="field"
+            class="contact-form---field-textarea"
+          ></textarea>
+          <button type="submit" value="Send" class="button">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="blank-space"></div>
+    <!--Javascript link contact.js-->
+    <script type="text/javascript" src="contact.js"></script>
+    <!--Footer-->
+    <div class="footer">
+      <div style="width: 50%; height: 20%; color: #ffffff; text-align: center">
+        <h1>Kavya Nathakumar</h1>
+        <p>2023</p>
+      </div>
+      <div style="width: 25%; color: #ffffff; text-align: center">
+        <h1>PHONE</h1>
+        <p>123-456-7890</p>
+      </div>
+      <div style="width: 25%; color: #ffffff; text-align: center">
+        <h1>EMAIL</h1>
+        <p>hello@gmail.com</p>
+      </div>
+    </div>
+  </body>
+</html>
