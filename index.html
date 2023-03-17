@@ -13,7 +13,7 @@
     <header>
       <!--Social site icons-->
       <section style="display: flex; flex-direction: row">
-        <div style="width: 600px; height: 50px">
+        <div style="width: 50%;">
           <ul class="social-icon-block">
             <li class="icon-circles">
               <a
@@ -21,10 +21,7 @@
                 href="https://www.facebook.com/"
                 target="_blank"
               >
-                <img
-                  class="icons"
-                  src="1217141_fb_icon.png"
-                />
+                <img class="icons" src="1217141_fb_icon.png" />
               </a>
             </li>
             <li class="icon-circles">
@@ -33,10 +30,7 @@
                 href="https://www.linkedin.com/in/kavya-nanthakumar/"
                 target="_blank"
               >
-                <img
-                  class="icons"
-                  src="1217173_linkedin_icon.png"
-                />
+                <img class="icons" src="1217173_linkedin_icon.png" />
               </a>
             </li>
             <li class="icon-circles">
@@ -45,21 +39,18 @@
                 href="https://www.instagram.com"
                 target="_blank"
               >
-                <img
-                  class="icons"
-                  src="1217174_instagram_icon.png"
-                />
+                <img class="icons" src="1217174_instagram_icon.png" />
               </a>
             </li>
           </ul>
         </div>
-        <!--Logo/Heading-->
-        <div>
-          <img
-            class="logo"
-            src="Heading.png"
-            alt="Kavya Portfolio"
-          />
+        <div style="width: 50%; float: right;">
+          <div style="display:flex; justify-content: end; position:relative; width: auto; padding-top: 15px; margin-right: 20px;">
+          <input type="text" class="search-text" placeholder="Search..">
+            <button type="submit" class="search-button">
+              <img src="search-icon.png" alt="search-icon" class="search-icon">
+            </button>
+          </div>
         </div>
       </section>
     </header>
@@ -67,59 +58,55 @@
     <div id="main-nav" class="main-nav">
       <div class="nav-item"><a href="index.html" class="nav-name">HOME</a></div>
       <div class="nav-item">
-        <a href="#Aboutme" class="nav-name">ABOUT ME</a>
+        <a href="about.html" class="nav-name">ABOUT ME</a>
       </div>
       <div class="nav-item">
-        <a href="#education" class="nav-name">EDUCATION</a>
+        <a href="education.html" class="nav-name">EDUCATION</a>
       </div>
       <div class="nav-item">
         <a href="contact.html" class="nav-name">CONTACT</a>
       </div>
     </div>
-    <!-- <ul class="main-nav">
-        <li> <a href="#home" class="nav-name">HOME</a></li>
-        <li><a href="#work" class="nav-name">WORK</a></li>
-        <li><a href="#education" class="nav-name">EDUCATION</a></li>
-        <li><a href="https://linkedin.com" class="nav-name">CONTACT</a></li>
-    </ul> -->
-    <div class="blank-space"></div>
+    <!--Navigation Buttons - End-->
 
     <!--Main Content-->
     <div class="main-section">
-      <div style="width: 50%; height: 50%; padding: 20px 20px 20px 20px;">
-        <p style="align-items: center;">
-          skjdfn;ksdjnf.kjdbfa;kjdfbaov;sdfnak/jdbfv;aehisrgajovbesd v.mnbsdkv
-          h.abdlsbjv
+      <div class="main-section-text-container">
+        <h1 class="main-section-fname">Kavya</h1>
+        <h1 class="main-section-lname">Nanthakumar</h1>
+        <p class="smalltext">Front End Developer</p>
+        <p class="smalltext">
+          I'm an aspiring front end web developer based in Utah.
         </p>
+        <div style="margin-top: 60px">
+          <a href="about.html" class="image-button">LEARN MORE</a>
+        </div>
       </div>
-      <div style="padding: 20px 20px 20px 20px;">
+      <div class="profilepic-container">
         <img
-          style="width: 50%"
-          src="Heading.png"
-          alt="Kavya Portfolio"
+          class="profilepic"
+          src="profilepic.jpg"
+          alt="Kavya Profile Picture"
         />
       </div>
     </div>
+
+    <div class="blank-space"></div>
+
     <!--Footer-->
     <div class="footer">
-      <div style="width: 50%; height: 20%; color: #ffffff; text-align: center">
-        <h1>Kavya Nathakumar</h1>
-        <p>2023</p>
+      <div class="footer-text">
+        <h1>&copy; 2023 Kavya Nanthakumar</h1>
       </div>
-      <div style="width: 25%; color: #ffffff; text-align: center">
+      <div style="width: 25%; font-size: 15px">
         <h1>PHONE</h1>
         <p>123-456-7890</p>
       </div>
-      <div style="width: 25%; color: #ffffff; text-align: center">
+      <div style="width: 25%; font-size: 15px">
         <h1>EMAIL</h1>
         <p>hello@gmail.com</p>
       </div>
     </div>
-    <!-- <div class="marquee-text">
-
-        <p class="para" id="para">Hello there! how are you?!</p>
-
-    </div>
-    <script type="text/javascript" src="marquee.js"></script> -->
+    
   </body>
 </html>

@@ -11,8 +11,8 @@
   <body>
     <header>
       <!--Social site icons-->
-      <section style="display: flex; flex-direction: row">
-        <div style="width: 600px">
+      <section style="display: flex; flex-direction: row;">
+        <div style="width:50%;">
           <ul class="social-icon-block">
             <li class="icon-circles">
               <a
@@ -52,23 +52,31 @@
             </li>
           </ul>
         </div>
-        <!--Logo/Heading-->
-        <div style="text-align: center">Kavya's Portfolio</div>
+        <div style="width: 50%; float: right;">
+            <div style="display:flex; justify-content: end; position:relative; width: auto; padding-top: 15px; margin-right: 20px;">
+            <input type="text" class="search-text" placeholder="Search..">
+              <button type="submit" class="search-button">
+                <img src="search-icon.png" alt="search-icon" class="search-icon">
+              </button>
+            </div>
+          </div>
       </section>
     </header>
     <!--Navigation Buttons-->
     <div id="main-nav" class="main-nav">
       <div class="nav-item"><a href="index.html" class="nav-name">HOME</a></div>
       <div class="nav-item">
-        <a href="#Aboutme" class="nav-name">ABOUT ME</a>
+        <a href="about.html" class="nav-name">ABOUT ME</a>
       </div>
       <div class="nav-item">
-        <a href="#education" class="nav-name">EDUCATION</a>
+        <a href="education.html" class="nav-name">EDUCATION</a>
       </div>
       <div class="nav-item">
         <a href="contact.html" class="nav-name">CONTACT</a>
       </div>
     </div>
+    <!--Navigation Buttons - End-->
+
     <!--Form-->
     <div><h1 class="connect">Let's Connect</h1></div>
     <div class="maincontent">
@@ -103,20 +111,19 @@
       </div>
     </div>
 
-    <div class="blank-space"></div>
+    <!-- <div class="blank-space"></div> -->
     <!--Javascript link contact.js-->
     <script type="text/javascript" src="contact.js"></script>
     <!--Footer-->
-    <div class="footer">
-      <div style="width: 50%; height: 20%; color: #ffffff; text-align: center">
-        <h1>Kavya Nathakumar</h1>
-        <p>2023</p>
+     <div class="footer">
+      <div class="footer-text">
+        <h1>&copy; 2023 Kavya Nanthakumar</h1>
       </div>
-      <div style="width: 25%; color: #ffffff; text-align: center">
+      <div style="width: 25%; font-size: 15px">
         <h1>PHONE</h1>
         <p>123-456-7890</p>
       </div>
-      <div style="width: 25%; color: #ffffff; text-align: center">
+      <div style="width: 25%; font-size: 15px">
         <h1>EMAIL</h1>
         <p>hello@gmail.com</p>
       </div>
