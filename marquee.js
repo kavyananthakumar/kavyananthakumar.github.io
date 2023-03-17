@@ -1,23 +1,3 @@
-// const para = document.getElementById("para");
-
-// animate(para);
-
-// function animate(element) {
-//     console.log(element);
-//     let elementWidth = element.offsetWidth;
-//     let parentWidth = element.parentElement.offsetWidth;
-//     let flag = 0;
-
-//     setInterval(() => {
-//         element.style.marginLeft = --flag + "px";
-
-//         if (elementWidth == -flag) {
-//             flag = parentWidth;
-//         }
-//     }, 10);
-// }
-
-
 document.getElementById('eduslate1').addEventListener('mouseover', function() {
     document.getElementById('eduslate1').style.backgroundColor=getColor();
     });
@@ -27,24 +7,20 @@ document.getElementById('eduslate2').addEventListener('mouseover', function() {
 document.getElementById('eduslate3').addEventListener('mouseover', function() {
     document.getElementById('eduslate3').style.backgroundColor=getColor();
     });
+    
+function getColor()
+{
+    const colors=['#9DBFAF', '#BFD0F6' ,'#C7A9E6', '#FCBFEA', '#BBD1C2' ,'#fbe8c1','#fceda4'];
+    return colors[Math.floor((Math.random()*colors.length))];
+}
 
-
-    function changeBackground() {
-        const color = getColor();
-        document.body.style.backgroundColor = color;
-     }
-     
-     function getColor() {
-        const red = getRandomRgbValue();
-        const green = getRandomRgbValue();
-        const blue = getRandomRgbValue();
-        const color = `rgb(${red}, ${green}, ${blue})`;
-        return color;
-     }
-     
-     function getRandomRgbValue() {
-        const random = Math.random();
-        const rgbSized = random * 256;
-        const floored = Math.floor(rgbSized);
-        return floored;
-     }
+// function getColor()
+// {
+//     const colors=['#9DBFAF', '#BFD0F6' ,'#C7A9E6', '#FCBFEA', '#BBD1C2' ,'#fbe8c1','#fceda4'];
+//     for(i=0; i<=colors.length; i++)
+//     {
+//         // return colors[i];
+//         console.log(colors[i]);
+//     }
+// }
+    

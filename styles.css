@@ -85,7 +85,8 @@ div {
 .nav-name:hover {
   font-size: 1.5em;
   transition: 1s;
-  color: rgb(248, 247, 211);
+  color: #f6f267;
+  /* color: rgb(248, 247, 211); */
 }
 
 /*End of navigation bar*/
@@ -161,7 +162,7 @@ div {
 
 .aboutme-pic
 {
-  width:400px;
+  /* width:400px; */
   height:400px;
   text-align: center;
   border: 1px solid #ffffff;
@@ -187,31 +188,13 @@ div {
   font-size: 25px;
   text-align: center;
 }
-.painting-container{
-  display: flex;
-  flex-direction: row;
-  margin: 50px 50px 50px 50px;
-}
-.painting-text{
-  padding: 50px 50px 50px 50px;
-  width:70%;
-  text-align: center;
-  color: #ffffff;
-  font-family: 'open sauce';
-  font-size: 25px;
-}
-
-
-
 
 /* Marquee styling */
 .marquee-text {
   display: flex;
-  align-items: center;
-  justify-items: center;
-  position: relative;
-  overflow: hidden;
-  width: 30%;
+  justify-content: center;
+  width: 50%;
+  /* width: 30%; */
 }
 
 .para {
@@ -222,6 +205,25 @@ div {
   /* float: left; */
   width: 200px;
   height:200px;
+}
+
+.painting{
+  width:300px; 
+  height:300px;
+}
+
+.painting-container{
+  display: flex;
+  flex-direction: row;
+  margin: 50px 50px 50px 50px;
+}
+.painting-text{
+  padding: 50px 50px 50px 50px;
+  width:50%;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'open sauce';
+  font-size: 25px;
 }
 
 .edu-flex{
@@ -243,57 +245,18 @@ div {
   background-color:rgb(202, 230, 246);
   border: 1px solid #ffffff;
   height: 300px;
-}
-
-
-
-/* Medium screens */
-@media all and (max-width: 800px) {
-  .main-nav {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
-  }
-
-  .main-section {
-    flex-direction:column;
-  }
-  .profilepic{
-    width:50%;
-  }
-  .search-icon{
-    width: 20px;
-    height: 20px;
-  }
-}
-
-/* Small screens */
-@media all and (max-width: 500px) {
-  .main-nav {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-    justify-content: space-around;
-    border:none;
-  }
-  .main-section {
-    flex-direction:column;
-  }
-  .profilepic{
-  width:50%;
-  }
-  .search-icon{
-    width: 20px;
-    height: 20px;
-  }
+  width: 30%;
+  word-wrap: break-word;
 }
 
 .profilepic-container{
+  width: 50%;
   padding: 20px 20px 20px 20px;
-  width:50%;
   text-align: center;
 }
 
 .profilepic{
-  width: 55%;
+  width: 60%;
   border-bottom-right-radius: 50px;
   border-top-left-radius: 50px; 
   border-top-right-radius: 20px;
@@ -381,6 +344,8 @@ div {
   font-family: 'Fjalla One', serif;
   margin: 10px 10px 10px 10px;
   width: 500px;
+  box-shadow: #868586 0px 5px 15px 0px;
+  /* box-shadow: rgba(250, 211, 250, 0.35) 0px 5px 15px; */
 }
 
 .contact-form---field {
@@ -406,8 +371,7 @@ div {
   font-size: 20px;
   margin: 20px 20px 20px 20px;
   /* width: 100%; */
-  border-style: solid;
-  border-color: #a6a6a6;
+  border: 1px solid #a6a6a6;
   box-shadow: rgba(107, 107, 107, 0.35) 0px 5px 15px;
 }
 
@@ -429,5 +393,83 @@ div {
   transform: scale(1.1);
   transition: 0.5s;
 }
-
 /* End of Contact Form */
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .main-nav {
+    flex-direction: column;
+    justify-content: space-around;
+    border:none;
+    margin-top: 50px;
+  }
+
+  .main-section {
+    flex-direction:column;
+    width: 100%;
+  }
+  .main-section-text-container{
+    width: auto;
+    margin-right: 50px;
+  }
+
+ .profilepic-container{
+  text-align: center;
+ }
+ .profilepic{
+  display: none;
+ }
+  .search-icon{
+    width: 20px;
+    height: 20px;
+  }
+
+}
+/* Small screens */
+@media all and (max-width: 500px) {
+  .main-nav {
+    flex-direction: column;
+    justify-content: space-around;
+    border:none;
+    margin-top: 50px;
+  }
+
+  .main-section {
+    flex-direction:column;
+    width: 100%;
+  }
+  .main-section-text-container{
+    width: auto;
+    margin-right: 50px;
+  }
+
+ .profilepic-container{
+  text-align: center;
+ }
+ .profilepic{
+  display: none;
+ }
+  .search-icon{
+    width: 20px;
+    height: 20px;
+  }
+
+  .aboutme-pic-container{
+    padding: 20px 20px 20px 20px;
+  }
+  .aboutme-pic{
+    width: 300px;
+    height: 300px;
+    margin: 20px 20px 20px 20px;
+  }
+  .painting-container{
+    flex-direction: column;
+  }
+  .painting-text{
+    width:auto;
+  }
+ .marquee-text{
+  width:auto;
+ }
+}
+/*End of Media Queries*/
